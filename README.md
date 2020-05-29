@@ -1,19 +1,19 @@
-#install&Run
+#install&Run <br />
 FrontEnd: 
 --------
-$ git clone https://github.com/Yadab-Sd/react-shopping.git
-$ cd react-shopping
-$ npm install
-$ npm start
+### `$ git clone https://github.com/Yadab-Sd/react-shopping.git` <br />
+### `$ cd react-shopping`
+### `$ npm install`
+### `$ npm start`
 
 BackEnd:
 --------
-Now open another terminal in same location, then run -
-$ cd api
-$ npm install
-$ npm start
+Now open another terminal in same location, then run - <br />
+### `$ cd api`
+### `$ npm install`
+### `$ npm start`
 
-Now, running frontend on port 3000 & backend on port 3001
+Now, running frontend on port `3000` & backend on port `3001` <br />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
