@@ -1,7 +1,5 @@
-import React, { useState, useEffect, ReactElement } from 'react';
-import { Button, Card, Container, Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import React, { ReactElement } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
 interface LayoutProps {
@@ -19,7 +17,6 @@ const Layout = ({ children, title }: LayoutProps): ReactElement => {
         <Container>
           <Row>
             <Col xs={12}>
-              <h4 className='my-heading'>{title}</h4>
               {children}
             </Col>
           </Row>

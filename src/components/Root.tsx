@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
-  Redirect,
   BrowserRouter as Router,
   Route,
   Switch,
