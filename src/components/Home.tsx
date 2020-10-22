@@ -17,7 +17,7 @@ function Home() {
     let gainedData = localStorage.getItem("jokes");
     gainedData = gainedData ? JSON.parse(gainedData) : [];
     if(gainedData?.length) setJokes(gainedData as any);
-  }, [jokes]);
+  }, []);
 
   return (
     <div>
