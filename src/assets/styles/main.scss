@@ -1,0 +1,153 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+// variables
+$body-color: #fefefe;
+$font-color: #040404;
+$heading: #000;
+$primary: #ff732b;
+$shadow: #e9e9e9;
+
+// presets
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+// mannual
+.App {
+  background: $body-color;
+  border-top: 5px solid $primary;
+  transition: all 0.5s;
+  overflow: none;
+  min-height: 100vh;
+}
+
+.single-product {
+  box-shadow: 1px 1px 10px $shadow;
+  margin: 10px 0;
+  .card {
+    width: 100% !important;
+  }
+  &-footer {
+    &-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: $primary;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      border: 1px solid $primary;
+      &:hover {
+        background: #fff;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.my-cart {
+  position: fixed;
+  top: 70px;
+  height: calc(100vh - 90px);
+  overflow: visible !important;
+  overflow-y: auto;
+  width: 300px;
+  right: 20px;
+  box-shadow: 1px 1px 10px $shadow;
+  transition: all 0.5s;
+  .cart-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+    width: 15px;
+    background: $primary;
+    color: white;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+}
+
+.cart-item {
+  max-height: 50px;
+  margin: 10px 5px;
+  padding: 25px 5px;
+  border-radius: 5px;
+  border: 1px solid #efefef;
+  box-shadow: 1px 1px 5px $shadow;
+  &-img {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 100%;
+    }
+  }
+  &-title {
+  }
+  &-btn {
+    a {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      border-radius: 50%;
+      color: #fff;
+      background: red;
+      text-align: center;
+      line-height: 15px;
+      font-size: 10px;
+    }
+  }
+}
+
+//
+.my-shadow {
+  box-shadow: 1px 1px 10px $shadow;
+}
+
+.my-heading {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: $primary;
+  }
+}
+
+.my-btn {
+  background-color: $primary;
+  border: none;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $primary;
+    box-shadow: 1px 1px 5px $shadow;
+  }
+}
+
+.my-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
